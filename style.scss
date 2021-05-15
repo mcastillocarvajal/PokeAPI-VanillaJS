@@ -47,18 +47,23 @@ body {
         border-bottom: 1px solid rgba(153, 153, 153, 0.178);
 
         &-img {
+            width: 200px;
+            height: 200px;
             border: 4px solid white;
             border-radius: 100%;
-            margin-top: calc(-50px - 5px);
+            margin-top: calc(-100px - 5px);
+            background-color: white;
         }
 
         &-title {
             font-size: 1.8rem;
             margin-top: 2rem;
+            text-transform: capitalize;
 
             span {
                 color: var(--dark-gray);
                 font-weight: 400;
+                margin-left: 4px;
             }
         }
 
