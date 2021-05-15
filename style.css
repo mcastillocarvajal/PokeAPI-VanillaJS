@@ -19,6 +19,9 @@ html {
 body {
   font-family: 'Kumbh Sans', sans-serif;
   background-color: var(--dark-cyan);
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 5vh, left 50vw top 50vh;
 }
 
 .flex {
@@ -59,11 +62,47 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.178);
 }
 
 .card-body-img {
   border: 4px solid white;
   border-radius: 100%;
   margin-top: calc(-50px - 5px);
+}
+
+.card-body-title {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.card-body-title span {
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+.card-body-text {
+  color: var(--dark-gray);
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-footer-info {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-footer-info p {
+  color: var(--dark-gray);
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=style.css.map */
